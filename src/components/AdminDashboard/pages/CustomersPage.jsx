@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Edit, Trash2, UserPlus, Users, AlertTriangle, ChevronRight, ShoppingCart, Copy } from "lucide-react";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || " https://smartcart-backend-8pu4.onrender.com";
 
 const initialForm = {
   managerName: "",

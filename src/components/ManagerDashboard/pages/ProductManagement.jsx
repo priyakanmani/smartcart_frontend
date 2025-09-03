@@ -96,7 +96,7 @@ const ProductManagement = () => {
           return;
         }
 
-        const response = await fetch(`http://localhost:5000/api/products?shop=${shopId}`, {
+        const response = await fetch(` https://smartcart-backend-8pu4.onrender.com/api/products?shop=${shopId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -257,7 +257,7 @@ const ProductManagement = () => {
           shop: shopId // Re-add shop ID to be sure
         };
         
-        const response = await fetch(`http://localhost:5000/api/products/${editingProduct._id}`, {
+        const response = await fetch(` https://smartcart-backend-8pu4.onrender.com/api/products/${editingProduct._id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -288,7 +288,7 @@ const ProductManagement = () => {
           shop: shopId // Re-add shop ID to be sure
         };
         
-        const response = await fetch('http://localhost:5000/api/products', {
+        const response = await fetch(' https://smartcart-backend-8pu4.onrender.com/api/products', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -364,7 +364,7 @@ const ProductManagement = () => {
           return;
         }
         
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`, {
+        const response = await fetch(` https://smartcart-backend-8pu4.onrender.com/api/products/${productId}`, {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -410,7 +410,7 @@ const ProductManagement = () => {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/products?shop=${shopId}`, {
+      const response = await fetch(` https://smartcart-backend-8pu4.onrender.com/api/products?shop=${shopId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

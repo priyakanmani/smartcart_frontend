@@ -168,7 +168,7 @@ const SalesAnalytics = () => {
 
       // Fetch sales data from API
       const response = await fetch(
-        `http://localhost:5000/api/sales/analytics?shop=${shopId}&startDate=${formattedStartDate}&endDate=${formattedEndDate}&groupBy=${timeRange}`, 
+        ` https://smartcart-backend-8pu4.onrender.com/api/sales/analytics?shop=${shopId}&startDate=${formattedStartDate}&endDate=${formattedEndDate}&groupBy=${timeRange}`, 
         {
           headers: {
             'Authorization': `Bearer ${token}`
@@ -241,7 +241,7 @@ const SalesAnalytics = () => {
       if (!token) return [];
 
       const response = await fetch(
-        `http://localhost:5000/api/products/top-selling?shop=${shopId}&limit=5`, 
+        ` https://smartcart-backend-8pu4.onrender.com/api/products/top-selling?shop=${shopId}&limit=5`, 
         {
           headers: {
             'Authorization': `Bearer ${token}`
@@ -283,7 +283,7 @@ const SalesAnalytics = () => {
       if (!token) return [];
 
       const response = await fetch(
-        `http://localhost:5000/api/sales/by-category?shop=${shopId}`, 
+        ` https://smartcart-backend-8pu4.onrender.com/api/sales/by-category?shop=${shopId}`, 
         {
           headers: {
             'Authorization': `Bearer ${token}`

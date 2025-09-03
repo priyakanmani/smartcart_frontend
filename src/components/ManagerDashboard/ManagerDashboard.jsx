@@ -278,7 +278,7 @@ const ManagerDashboardPage = () => {
           
           // If not in localStorage, fetch from API
           if (managerToken && managerEmail) {
-            const apiUrl = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/api/manager/profile?email=${encodeURIComponent(managerEmail)}`;
+            const apiUrl = `${import.meta.env.VITE_API_BASE_URL || ' https://smartcart-backend-8pu4.onrender.com'}/api/manager/profile?email=${encodeURIComponent(managerEmail)}`;
             console.log('🌐 Fetching profile from API:', apiUrl);
             
             try {

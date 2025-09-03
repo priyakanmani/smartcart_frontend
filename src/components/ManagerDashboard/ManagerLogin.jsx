@@ -31,7 +31,7 @@ const ManagerLogin = () => {
     console.log('🔐 Login attempt:', { email, password: '••••••••' });
 
     try {
-      const apiUrl = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/api/manager/login`;
+      const apiUrl = `${import.meta.env.VITE_API_BASE_URL || ' https://smartcart-backend-8pu4.onrender.com'}/api/manager/login`;
       console.log('🌐 Making API request to:', apiUrl);
       
       const response = await fetch(apiUrl, {

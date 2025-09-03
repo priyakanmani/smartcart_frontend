@@ -22,7 +22,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 
 const API_BASE_URL = process.env.NODE_ENV === 'development' 
-  ? 'http://localhost:5000/api' 
+  ? ' https://smartcart-backend-8pu4.onrender.com/api' 
   : '/api';
 
 const CartDashboard = () => {

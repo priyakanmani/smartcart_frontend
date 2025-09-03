@@ -44,7 +44,7 @@ const AdminLogin = () => {
     
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/api/admin/login`,
+        `${import.meta.env.VITE_API_BASE_URL || ' https://smartcart-backend-8pu4.onrender.com'}/api/admin/login`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
